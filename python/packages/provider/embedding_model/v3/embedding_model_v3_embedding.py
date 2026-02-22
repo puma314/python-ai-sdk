@@ -1,5 +1,7 @@
-"""Stub for embedding_model_v3_embedding.
+"""Translated from: packages/provider/src/embedding-model/v3/embedding-model-v3-embedding.ts"""
 
-Translated from: packages/provider/src/embedding-model/v3/embedding-model-v3-embedding.ts
-TODO: implement
-"""
+from __future__ import annotations
+
+# An embedding is a vector, i.e. an array of numbers.
+# It is e.g. used to represent a text as a vector of word embeddings.
+EmbeddingModelV3Embedding = list[float]
