@@ -36,6 +36,13 @@ Examples:
 
 ## Steps
 
+0. **Check if scaffolding has already been done.** Before doing any work, check whether this package has already been scaffolded:
+   - Use Glob to list `.py` files under the expected target directory (e.g. `python/packages/provider/**/*.py` for `packages/provider`).
+   - If the target directory exists and contains at least 5 `.py` files, the scaffold has already been run. In this case:
+     - Print: `SKIPPED: Scaffold already exists for <package_name> (<N> .py files found in <target_dir>)`
+     - Do NOT create any files, do NOT commit anything, do NOT modify the scratchpad.
+     - Exit immediately.
+
 1. **List the source tree.** Use Glob to discover all files and directories under the given path. Ignore `node_modules`, `dist`, `.turbo`, and other build artifacts.
 
 2. **Compute the destination path.** Replace the leading `packages/` prefix with `python/packages/`, **strip the `src/` segment** (Python packages don't use a `src/` directory), and convert every kebab-case segment in the path to snake_case. For example:

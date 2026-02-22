@@ -60,25 +60,14 @@ You do NOT modify files. You only read and report.
 - Imports would fail at runtime
 - JavaScript syntax remains in the Python code
 
-**For anything that is debatable or a style preference**: Do NOT fail. Instead, log the concern to `translation/state/escalation.md` in this format:
-```
-[{{TARGET_PATH}}] <brief description of the concern>
-```
-Then output PASSED.
+**For anything that is debatable or a style preference**: Do NOT fail. Instead, include the concern in the `escalations` field of your output (described below).
 
 ## Output Format
 
-If the translation passes:
-```
-PASSED
-```
+Your output is **structured JSON** (enforced by the system). You must return a JSON object with these fields:
 
-If the translation has real problems:
-```
-FAILED
-- [CATEGORY] Issue description
-  Location: line N or function/class name
-  Fix: what needs to change
-```
+- `verdict`: `"PASSED"` or `"FAILED"`
+- `failures`: An array of strings describing blocking issues. Empty array `[]` if verdict is PASSED.
+- `escalations`: An array of strings for non-blocking style notes (may be empty). Each entry should be a brief description of the concern, e.g. `"Module docstring appears after from __future__ import annotations; PEP 257 recommends it be the first statement."`.
 
-Keep feedback concise. Only list issues that are actual blockers (missing exports, wrong logic, broken imports, JS-isms).
+Keep failure descriptions concise and actionable. Only list issues that are actual blockers (missing exports, wrong logic, broken imports, JS-isms).

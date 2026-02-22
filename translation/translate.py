@@ -510,8 +510,11 @@ def agent_log_path(agent_type: str, label: str) -> Path:
 # ---------------------------------------------------------------------------
 
 
-async def collect_result(query_iter: Any, log_file: Path | None = None) -> tuple[str, bool]:
-    """Drain an agent query iterator and return (result_text, is_error).
+async def collect_result(
+    query_iter: Any,
+    log_file: Path | None = None,
+) -> tuple[str, bool, Any]:
+    """Drain an agent query iterator and return (result_text, is_error, structured_output).
 
     If log_file is provided, writes all agent messages to it.
     Handles unknown message types gracefully (e.g. rate_limit_event).
@@ -526,6 +529,7 @@ async def collect_result(query_iter: Any, log_file: Path | None = None) -> tuple
 
     last_result = ""
     is_error = False
+    structured_output = None
     try:
         async for message in query_iter:
             # Skip None messages (from patched parser handling unknown types)
@@ -546,13 +550,17 @@ async def collect_result(query_iter: Any, log_file: Path | None = None) -> tuple
             if isinstance(message, ResultMessage):
                 last_result = message.result or ""
                 is_error = message.is_error
+                if hasattr(message, "structured_output"):
+                    structured_output = message.structured_output
     finally:
         if fh:
             fh.write(f"\n=== Agent log ended at {datetime.now(timezone.utc).isoformat()} ===\n")
             fh.write(f"Result: {'ERROR' if is_error else 'OK'}\n")
+            if structured_output is not None:
+                fh.write(f"Structured output: {json.dumps(structured_output)}\n")
             fh.close()
 
-    return last_result, is_error
+    return last_result, is_error, structured_output
 
 
 def git_commit(message: str, paths: list[str]) -> bool:
@@ -601,7 +609,7 @@ async def run_scaffold_agent(pkg: str) -> None:
 
     scaffold_prompt = load_prompt("scaffold-agent.md")
 
-    result, is_error = await collect_result(
+    result, is_error, _ = await collect_result(
         query(
             prompt=f"Scaffold the package: packages/{pkg}",
             options=ClaudeAgentOptions(
@@ -645,7 +653,7 @@ async def run_file_agent(f: FileState, pkg: str, queue: FileQueue) -> tuple[File
     )
 
     try:
-        result, is_error = await collect_result(
+        result, is_error, _ = await collect_result(
             query(
                 prompt=f"Translate {f.source_path} to Python at {f.target_path}",
                 options=ClaudeAgentOptions(
@@ -667,6 +675,33 @@ async def run_file_agent(f: FileState, pkg: str, queue: FileQueue) -> tuple[File
         return f, False, str(e)
 
 
+CHECKER_OUTPUT_SCHEMA = {
+    "type": "json_schema",
+    "schema": {
+        "type": "object",
+        "properties": {
+            "verdict": {
+                "type": "string",
+                "enum": ["PASSED", "FAILED"],
+                "description": "Whether the translation passed or failed validation.",
+            },
+            "failures": {
+                "type": "array",
+                "items": {"type": "string"},
+                "description": "List of blocking issues (empty if verdict is PASSED).",
+            },
+            "escalations": {
+                "type": "array",
+                "items": {"type": "string"},
+                "description": "Non-blocking style notes for escalation.md (may be empty).",
+            },
+        },
+        "required": ["verdict", "failures", "escalations"],
+        "additionalProperties": False,
+    },
+}
+
+
 async def run_checker_agent(f: FileState, pkg: str) -> tuple[FileState, bool, str | None]:
     """Validate a translated file. Returns (file, passed, feedback_or_none)."""
     src_name = Path(f.source_path).stem
@@ -684,7 +719,7 @@ async def run_checker_agent(f: FileState, pkg: str) -> tuple[FileState, bool, st
     )
 
     try:
-        result, is_error = await collect_result(
+        result, is_error, structured = await collect_result(
             query(
                 prompt=f"Check the translated Python file at {f.target_path} against source {f.source_path}",
                 options=ClaudeAgentOptions(
@@ -694,6 +729,7 @@ async def run_checker_agent(f: FileState, pkg: str) -> tuple[FileState, bool, st
                     permission_mode="bypassPermissions",
                     cwd=str(ROOT),
                     max_turns=15,
+                    output_format=CHECKER_OUTPUT_SCHEMA,
                 ),
             ),
             log_file=log_file,
@@ -702,7 +738,33 @@ async def run_checker_agent(f: FileState, pkg: str) -> tuple[FileState, bool, st
             logger.warning(f"  [Checker] Agent error for {f.target_path}, treating as pass")
             return f, True, None
 
-        passed = result.strip().startswith("PASSED")
+        # Use structured output if available
+        if structured and isinstance(structured, dict):
+            verdict = structured.get("verdict", "")
+            passed = verdict == "PASSED"
+            # Write escalation notes if any
+            escalations = structured.get("escalations", [])
+            if escalations:
+                esc_path = STATE_DIR / "escalation.md"
+                with open(esc_path, "a", encoding="utf-8") as ef:
+                    for note in escalations:
+                        ef.write(f"[{f.target_path}] {note}\n")
+            if passed:
+                return f, True, None
+            failures = structured.get("failures", [])
+            feedback = "\n".join(failures) if failures else result
+            return f, False, feedback
+
+        # Fallback: parse text result if structured output unavailable
+        clean = result.replace("```", "").strip()
+        has_passed = "\nPASSED" in f"\n{clean}" or clean.startswith("PASSED")
+        has_failed = "\nFAILED" in f"\n{clean}" or clean.startswith("FAILED")
+        if has_passed and has_failed:
+            passed = clean.rfind("PASSED") > clean.rfind("FAILED")
+        elif has_passed:
+            passed = True
+        else:
+            passed = False
         return f, passed, None if passed else result
     except Exception as e:
         logger.warning(f"  [Checker] Exception for {f.target_path}: {e}")
@@ -725,7 +787,7 @@ async def run_package_checker_agent(pkg: str) -> None:
     )
 
     try:
-        result, is_error = await collect_result(
+        result, is_error, _ = await collect_result(
             query(
                 prompt=f"Run holistic package check on python/packages/{py_pkg} (translated from packages/{pkg})",
                 options=ClaudeAgentOptions(
