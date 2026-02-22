@@ -1,0 +1,1359 @@
+{
+  "package": "provider",
+  "files": {
+    "packages/provider/src/embedding-model/v2/embedding-model-v2-embedding.ts": {
+      "target_path": "python/packages/provider/embedding_model/v2/embedding_model_v2_embedding.py",
+      "status": "done",
+      "attempts": 2,
+      "last_error": null,
+      "dependencies": []
+    },
+    "packages/provider/src/embedding-model/v3/embedding-model-v3-embedding.ts": {
+      "target_path": "python/packages/provider/embedding_model/v3/embedding_model_v3_embedding.py",
+      "status": "done",
+      "attempts": 2,
+      "last_error": null,
+      "dependencies": []
+    },
+    "packages/provider/src/errors/ai-sdk-error.ts": {
+      "target_path": "python/packages/provider/errors/ai_sdk_error.py",
+      "status": "done",
+      "attempts": 2,
+      "last_error": null,
+      "dependencies": []
+    },
+    "packages/provider/src/errors/get-error-message.ts": {
+      "target_path": "python/packages/provider/errors/get_error_message.py",
+      "status": "done",
+      "attempts": 2,
+      "last_error": null,
+      "dependencies": []
+    },
+    "packages/provider/src/image-model/v3/image-model-v3-usage.ts": {
+      "target_path": "python/packages/provider/image_model/v3/image_model_v3_usage.py",
+      "status": "done",
+      "attempts": 2,
+      "last_error": null,
+      "dependencies": []
+    },
+    "packages/provider/src/json-value/json-value.ts": {
+      "target_path": "python/packages/provider/json_value/json_value.py",
+      "status": "done",
+      "attempts": 2,
+      "last_error": null,
+      "dependencies": []
+    },
+    "packages/provider/src/language-model/v2/language-model-v2-data-content.ts": {
+      "target_path": "python/packages/provider/language_model/v2/language_model_v2_data_content.py",
+      "status": "done",
+      "attempts": 2,
+      "last_error": null,
+      "dependencies": []
+    },
+    "packages/provider/src/language-model/v2/language-model-v2-file.ts": {
+      "target_path": "python/packages/provider/language_model/v2/language_model_v2_file.py",
+      "status": "done",
+      "attempts": 2,
+      "last_error": null,
+      "dependencies": []
+    },
+    "packages/provider/src/language-model/v2/language-model-v2-finish-reason.ts": {
+      "target_path": "python/packages/provider/language_model/v2/language_model_v2_finish_reason.py",
+      "status": "done",
+      "attempts": 2,
+      "last_error": null,
+      "dependencies": []
+    },
+    "packages/provider/src/language-model/v2/language-model-v2-provider-defined-tool.ts": {
+      "target_path": "python/packages/provider/language_model/v2/language_model_v2_provider_defined_tool.py",
+      "status": "done",
+      "attempts": 2,
+      "last_error": null,
+      "dependencies": []
+    },
+    "packages/provider/src/language-model/v2/language-model-v2-response-metadata.ts": {
+      "target_path": "python/packages/provider/language_model/v2/language_model_v2_response_metadata.py",
+      "status": "done",
+      "attempts": 1,
+      "last_error": null,
+      "dependencies": []
+    },
+    "packages/provider/src/language-model/v2/language-model-v2-tool-choice.ts": {
+      "target_path": "python/packages/provider/language_model/v2/language_model_v2_tool_choice.py",
+      "status": "done",
+      "attempts": 2,
+      "last_error": null,
+      "dependencies": []
+    },
+    "packages/provider/src/language-model/v2/language-model-v2-usage.ts": {
+      "target_path": "python/packages/provider/language_model/v2/language_model_v2_usage.py",
+      "status": "done",
+      "attempts": 1,
+      "last_error": null,
+      "dependencies": []
+    },
+    "packages/provider/src/language-model/v3/language-model-v3-data-content.ts": {
+      "target_path": "python/packages/provider/language_model/v3/language_model_v3_data_content.py",
+      "status": "done",
+      "attempts": 1,
+      "last_error": null,
+      "dependencies": []
+    },
+    "packages/provider/src/language-model/v3/language-model-v3-finish-reason.ts": {
+      "target_path": "python/packages/provider/language_model/v3/language_model_v3_finish_reason.py",
+      "status": "done",
+      "attempts": 1,
+      "last_error": null,
+      "dependencies": []
+    },
+    "packages/provider/src/language-model/v3/language-model-v3-provider-tool.ts": {
+      "target_path": "python/packages/provider/language_model/v3/language_model_v3_provider_tool.py",
+      "status": "done",
+      "attempts": 2,
+      "last_error": null,
+      "dependencies": []
+    },
+    "packages/provider/src/language-model/v3/language-model-v3-response-metadata.ts": {
+      "target_path": "python/packages/provider/language_model/v3/language_model_v3_response_metadata.py",
+      "status": "done",
+      "attempts": 1,
+      "last_error": null,
+      "dependencies": []
+    },
+    "packages/provider/src/language-model/v3/language-model-v3-tool-choice.ts": {
+      "target_path": "python/packages/provider/language_model/v3/language_model_v3_tool_choice.py",
+      "status": "done",
+      "attempts": 1,
+      "last_error": null,
+      "dependencies": []
+    },
+    "packages/provider/src/shared/v2/shared-v2-headers.ts": {
+      "target_path": "python/packages/provider/shared/v2/shared_v2_headers.py",
+      "status": "done",
+      "attempts": 1,
+      "last_error": null,
+      "dependencies": []
+    },
+    "packages/provider/src/shared/v3/shared-v3-headers.ts": {
+      "target_path": "python/packages/provider/shared/v3/shared_v3_headers.py",
+      "status": "done",
+      "attempts": 1,
+      "last_error": null,
+      "dependencies": []
+    },
+    "packages/provider/src/shared/v3/shared-v3-warning.ts": {
+      "target_path": "python/packages/provider/shared/v3/shared_v3_warning.py",
+      "status": "done",
+      "attempts": 1,
+      "last_error": null,
+      "dependencies": []
+    },
+    "packages/provider/src/embedding-model/v2/embedding-model-v2.ts": {
+      "target_path": "python/packages/provider/embedding_model/v2/embedding_model_v2.py",
+      "status": "done",
+      "attempts": 1,
+      "last_error": null,
+      "dependencies": [
+        "packages/provider/src/embedding-model/v2/embedding-model-v2-embedding.ts"
+      ]
+    },
+    "packages/provider/src/embedding-model/v3/embedding-model-v3-result.ts": {
+      "target_path": "python/packages/provider/embedding_model/v3/embedding_model_v3_result.py",
+      "status": "done",
+      "attempts": 1,
+      "last_error": null,
+      "dependencies": [
+        "packages/provider/src/embedding-model/v3/embedding-model-v3-embedding.ts"
+      ]
+    },
+    "packages/provider/src/errors/api-call-error.ts": {
+      "target_path": "python/packages/provider/errors/api_call_error.py",
+      "status": "done",
+      "attempts": 1,
+      "last_error": null,
+      "dependencies": [
+        "packages/provider/src/errors/ai-sdk-error.ts"
+      ]
+    },
+    "packages/provider/src/errors/empty-response-body-error.ts": {
+      "target_path": "python/packages/provider/errors/empty_response_body_error.py",
+      "status": "done",
+      "attempts": 1,
+      "last_error": null,
+      "dependencies": [
+        "packages/provider/src/errors/ai-sdk-error.ts"
+      ]
+    },
+    "packages/provider/src/errors/invalid-argument-error.ts": {
+      "target_path": "python/packages/provider/errors/invalid_argument_error.py",
+      "status": "done",
+      "attempts": 1,
+      "last_error": null,
+      "dependencies": [
+        "packages/provider/src/errors/ai-sdk-error.ts"
+      ]
+    },
+    "packages/provider/src/errors/invalid-prompt-error.ts": {
+      "target_path": "python/packages/provider/errors/invalid_prompt_error.py",
+      "status": "done",
+      "attempts": 1,
+      "last_error": null,
+      "dependencies": [
+        "packages/provider/src/errors/ai-sdk-error.ts"
+      ]
+    },
+    "packages/provider/src/errors/invalid-response-data-error.ts": {
+      "target_path": "python/packages/provider/errors/invalid_response_data_error.py",
+      "status": "done",
+      "attempts": 1,
+      "last_error": null,
+      "dependencies": [
+        "packages/provider/src/errors/ai-sdk-error.ts"
+      ]
+    },
+    "packages/provider/src/errors/json-parse-error.ts": {
+      "target_path": "python/packages/provider/errors/json_parse_error.py",
+      "status": "done",
+      "attempts": 1,
+      "last_error": null,
+      "dependencies": [
+        "packages/provider/src/errors/ai-sdk-error.ts",
+        "packages/provider/src/errors/get-error-message.ts"
+      ]
+    },
+    "packages/provider/src/errors/load-api-key-error.ts": {
+      "target_path": "python/packages/provider/errors/load_api_key_error.py",
+      "status": "done",
+      "attempts": 1,
+      "last_error": null,
+      "dependencies": [
+        "packages/provider/src/errors/ai-sdk-error.ts"
+      ]
+    },
+    "packages/provider/src/errors/load-setting-error.ts": {
+      "target_path": "python/packages/provider/errors/load_setting_error.py",
+      "status": "done",
+      "attempts": 1,
+      "last_error": null,
+      "dependencies": [
+        "packages/provider/src/errors/ai-sdk-error.ts"
+      ]
+    },
+    "packages/provider/src/errors/no-content-generated-error.ts": {
+      "target_path": "python/packages/provider/errors/no_content_generated_error.py",
+      "status": "done",
+      "attempts": 1,
+      "last_error": null,
+      "dependencies": [
+        "packages/provider/src/errors/ai-sdk-error.ts"
+      ]
+    },
+    "packages/provider/src/errors/no-such-model-error.ts": {
+      "target_path": "python/packages/provider/errors/no_such_model_error.py",
+      "status": "done",
+      "attempts": 1,
+      "last_error": null,
+      "dependencies": [
+        "packages/provider/src/errors/ai-sdk-error.ts"
+      ]
+    },
+    "packages/provider/src/errors/too-many-embedding-values-for-call-error.ts": {
+      "target_path": "python/packages/provider/errors/too_many_embedding_values_for_call_error.py",
+      "status": "done",
+      "attempts": 1,
+      "last_error": null,
+      "dependencies": [
+        "packages/provider/src/errors/ai-sdk-error.ts"
+      ]
+    },
+    "packages/provider/src/errors/type-validation-error.ts": {
+      "target_path": "python/packages/provider/errors/type_validation_error.py",
+      "status": "done",
+      "attempts": 1,
+      "last_error": null,
+      "dependencies": [
+        "packages/provider/src/errors/ai-sdk-error.ts",
+        "packages/provider/src/errors/get-error-message.ts"
+      ]
+    },
+    "packages/provider/src/errors/unsupported-functionality-error.ts": {
+      "target_path": "python/packages/provider/errors/unsupported_functionality_error.py",
+      "status": "done",
+      "attempts": 1,
+      "last_error": null,
+      "dependencies": [
+        "packages/provider/src/errors/ai-sdk-error.ts"
+      ]
+    },
+    "packages/provider/src/json-value/is-json.ts": {
+      "target_path": "python/packages/provider/json_value/is_json.py",
+      "status": "done",
+      "attempts": 1,
+      "last_error": null,
+      "dependencies": [
+        "packages/provider/src/json-value/json-value.ts"
+      ]
+    },
+    "packages/provider/src/shared/v2/shared-v2-provider-metadata.ts": {
+      "target_path": "python/packages/provider/shared/v2/shared_v2_provider_metadata.py",
+      "status": "done",
+      "attempts": 1,
+      "last_error": null,
+      "dependencies": [
+        "packages/provider/src/json-value/json-value.ts"
+      ]
+    },
+    "packages/provider/src/shared/v2/shared-v2-provider-options.ts": {
+      "target_path": "python/packages/provider/shared/v2/shared_v2_provider_options.py",
+      "status": "done",
+      "attempts": 1,
+      "last_error": null,
+      "dependencies": [
+        "packages/provider/src/json-value/json-value.ts"
+      ]
+    },
+    "packages/provider/src/shared/v3/shared-v3-provider-metadata.ts": {
+      "target_path": "python/packages/provider/shared/v3/shared_v3_provider_metadata.py",
+      "status": "done",
+      "attempts": 1,
+      "last_error": null,
+      "dependencies": [
+        "packages/provider/src/json-value/json-value.ts"
+      ]
+    },
+    "packages/provider/src/shared/v3/shared-v3-provider-options.ts": {
+      "target_path": "python/packages/provider/shared/v3/shared_v3_provider_options.py",
+      "status": "done",
+      "attempts": 1,
+      "last_error": null,
+      "dependencies": [
+        "packages/provider/src/json-value/json-value.ts"
+      ]
+    },
+    "packages/provider/src/speech-model/v2/speech-model-v2-call-options.ts": {
+      "target_path": "python/packages/provider/speech_model/v2/speech_model_v2_call_options.py",
+      "status": "done",
+      "attempts": 1,
+      "last_error": null,
+      "dependencies": [
+        "packages/provider/src/json-value/json-value.ts"
+      ]
+    },
+    "packages/provider/src/speech-model/v3/speech-model-v3-call-options.ts": {
+      "target_path": "python/packages/provider/speech_model/v3/speech_model_v3_call_options.py",
+      "status": "done",
+      "attempts": 1,
+      "last_error": null,
+      "dependencies": [
+        "packages/provider/src/json-value/json-value.ts"
+      ]
+    },
+    "packages/provider/src/transcription-model/v2/transcription-model-v2-call-options.ts": {
+      "target_path": "python/packages/provider/transcription_model/v2/transcription_model_v2_call_options.py",
+      "status": "done",
+      "attempts": 1,
+      "last_error": null,
+      "dependencies": [
+        "packages/provider/src/json-value/json-value.ts"
+      ]
+    },
+    "packages/provider/src/transcription-model/v3/transcription-model-v3-call-options.ts": {
+      "target_path": "python/packages/provider/transcription_model/v3/transcription_model_v3_call_options.py",
+      "status": "done",
+      "attempts": 1,
+      "last_error": null,
+      "dependencies": [
+        "packages/provider/src/json-value/json-value.ts"
+      ]
+    },
+    "packages/provider/src/embedding-model/v2/index.ts": {
+      "target_path": "python/packages/provider/embedding_model/v2/__init__.py",
+      "status": "done",
+      "attempts": 1,
+      "last_error": null,
+      "dependencies": [
+        "packages/provider/src/embedding-model/v2/embedding-model-v2.ts",
+        "packages/provider/src/embedding-model/v2/embedding-model-v2-embedding.ts"
+      ]
+    },
+    "packages/provider/src/errors/index.ts": {
+      "target_path": "python/packages/provider/errors/__init__.py",
+      "status": "done",
+      "attempts": 1,
+      "last_error": null,
+      "dependencies": [
+        "packages/provider/src/errors/ai-sdk-error.ts",
+        "packages/provider/src/errors/api-call-error.ts",
+        "packages/provider/src/errors/empty-response-body-error.ts",
+        "packages/provider/src/errors/get-error-message.ts",
+        "packages/provider/src/errors/invalid-argument-error.ts",
+        "packages/provider/src/errors/invalid-prompt-error.ts",
+        "packages/provider/src/errors/invalid-response-data-error.ts",
+        "packages/provider/src/errors/json-parse-error.ts",
+        "packages/provider/src/errors/load-api-key-error.ts",
+        "packages/provider/src/errors/load-setting-error.ts",
+        "packages/provider/src/errors/no-content-generated-error.ts",
+        "packages/provider/src/errors/no-such-model-error.ts",
+        "packages/provider/src/errors/too-many-embedding-values-for-call-error.ts",
+        "packages/provider/src/errors/type-validation-error.ts",
+        "packages/provider/src/errors/type-validation-error.ts",
+        "packages/provider/src/errors/unsupported-functionality-error.ts"
+      ]
+    },
+    "packages/provider/src/json-value/index.ts": {
+      "target_path": "python/packages/provider/json_value/__init__.py",
+      "status": "done",
+      "attempts": 1,
+      "last_error": null,
+      "dependencies": [
+        "packages/provider/src/json-value/is-json.ts",
+        "packages/provider/src/json-value/json-value.ts"
+      ]
+    },
+    "packages/provider/src/language-model/v2/language-model-v2-prompt.ts": {
+      "target_path": "python/packages/provider/language_model/v2/language_model_v2_prompt.py",
+      "status": "done",
+      "attempts": 1,
+      "last_error": null,
+      "dependencies": [
+        "packages/provider/src/json-value/json-value.ts",
+        "packages/provider/src/shared/v2/shared-v2-provider-options.ts",
+        "packages/provider/src/language-model/v2/language-model-v2-data-content.ts"
+      ]
+    },
+    "packages/provider/src/language-model/v2/language-model-v2-source.ts": {
+      "target_path": "python/packages/provider/language_model/v2/language_model_v2_source.py",
+      "status": "done",
+      "attempts": 1,
+      "last_error": null,
+      "dependencies": [
+        "packages/provider/src/shared/v2/shared-v2-provider-metadata.ts"
+      ]
+    },
+    "packages/provider/src/language-model/v2/language-model-v2-text.ts": {
+      "target_path": "python/packages/provider/language_model/v2/language_model_v2_text.py",
+      "status": "done",
+      "attempts": 1,
+      "last_error": null,
+      "dependencies": [
+        "packages/provider/src/shared/v2/shared-v2-provider-metadata.ts"
+      ]
+    },
+    "packages/provider/src/language-model/v2/language-model-v2-tool-call.ts": {
+      "target_path": "python/packages/provider/language_model/v2/language_model_v2_tool_call.py",
+      "status": "done",
+      "attempts": 1,
+      "last_error": null,
+      "dependencies": [
+        "packages/provider/src/shared/v2/shared-v2-provider-metadata.ts"
+      ]
+    },
+    "packages/provider/src/language-model/v2/language-model-v2-tool-result.ts": {
+      "target_path": "python/packages/provider/language_model/v2/language_model_v2_tool_result.py",
+      "status": "done",
+      "attempts": 1,
+      "last_error": null,
+      "dependencies": [
+        "packages/provider/src/shared/v2/shared-v2-provider-metadata.ts"
+      ]
+    },
+    "packages/provider/src/language-model/v3/language-model-v3-prompt.ts": {
+      "target_path": "python/packages/provider/language_model/v3/language_model_v3_prompt.py",
+      "status": "done",
+      "attempts": 1,
+      "last_error": null,
+      "dependencies": [
+        "packages/provider/src/json-value/json-value.ts",
+        "packages/provider/src/shared/v3/shared-v3-provider-options.ts",
+        "packages/provider/src/language-model/v3/language-model-v3-data-content.ts"
+      ]
+    },
+    "packages/provider/src/language-model/v3/language-model-v3-source.ts": {
+      "target_path": "python/packages/provider/language_model/v3/language_model_v3_source.py",
+      "status": "done",
+      "attempts": 1,
+      "last_error": null,
+      "dependencies": [
+        "packages/provider/src/shared/v3/shared-v3-provider-metadata.ts"
+      ]
+    },
+    "packages/provider/src/language-model/v3/language-model-v3-text.ts": {
+      "target_path": "python/packages/provider/language_model/v3/language_model_v3_text.py",
+      "status": "done",
+      "attempts": 2,
+      "last_error": "Import `from ai_sdk.provider.shared.v3.shared_v3_provider_metadata import SharedV3ProviderMetadata` is invalid. No `ai_sdk` namespace package is configured in pyproject.toml; the physical package root is `python/packages/provider/`. The correct relative import (per translation rules for `../../shared/v3/shared-v3-provider-metadata`) is `from ...shared.v3.shared_v3_provider_metadata import SharedV3ProviderMetadata`. Sibling files such as `language_model_v3_tool_call.py` correctly use this relative form.",
+      "dependencies": [
+        "packages/provider/src/shared/v3/shared-v3-provider-metadata.ts"
+      ]
+    },
+    "packages/provider/src/language-model/v3/language-model-v3-tool-approval-request.ts": {
+      "target_path": "python/packages/provider/language_model/v3/language_model_v3_tool_approval_request.py",
+      "status": "done",
+      "attempts": 1,
+      "last_error": null,
+      "dependencies": [
+        "packages/provider/src/shared/v3/shared-v3-provider-metadata.ts"
+      ]
+    },
+    "packages/provider/src/language-model/v3/language-model-v3-tool-call.ts": {
+      "target_path": "python/packages/provider/language_model/v3/language_model_v3_tool_call.py",
+      "status": "done",
+      "attempts": 1,
+      "last_error": null,
+      "dependencies": [
+        "packages/provider/src/shared/v3/shared-v3-provider-metadata.ts"
+      ]
+    },
+    "packages/provider/src/shared/v2/index.ts": {
+      "target_path": "python/packages/provider/shared/v2/__init__.py",
+      "status": "done",
+      "attempts": 1,
+      "last_error": null,
+      "dependencies": [
+        "packages/provider/src/shared/v2/shared-v2-headers.ts",
+        "packages/provider/src/shared/v2/shared-v2-provider-metadata.ts",
+        "packages/provider/src/shared/v2/shared-v2-provider-options.ts"
+      ]
+    },
+    "packages/provider/src/shared/v3/index.ts": {
+      "target_path": "python/packages/provider/shared/v3/__init__.py",
+      "status": "done",
+      "attempts": 1,
+      "last_error": null,
+      "dependencies": [
+        "packages/provider/src/shared/v3/shared-v3-headers.ts",
+        "packages/provider/src/shared/v3/shared-v3-provider-metadata.ts",
+        "packages/provider/src/shared/v3/shared-v3-provider-options.ts",
+        "packages/provider/src/shared/v3/shared-v3-warning.ts"
+      ]
+    },
+    "packages/provider/src/speech-model/v2/speech-model-v2-call-warning.ts": {
+      "target_path": "python/packages/provider/speech_model/v2/speech_model_v2_call_warning.py",
+      "status": "done",
+      "attempts": 1,
+      "last_error": null,
+      "dependencies": [
+        "packages/provider/src/speech-model/v2/speech-model-v2-call-options.ts"
+      ]
+    },
+    "packages/provider/src/transcription-model/v2/transcription-model-v2-call-warning.ts": {
+      "target_path": "python/packages/provider/transcription_model/v2/transcription_model_v2_call_warning.py",
+      "status": "done",
+      "attempts": 1,
+      "last_error": null,
+      "dependencies": [
+        "packages/provider/src/transcription-model/v2/transcription-model-v2-call-options.ts"
+      ]
+    },
+    "packages/provider/src/language-model/v3/language-model-v3-tool-result.ts": {
+      "target_path": "python/packages/provider/language_model/v3/language_model_v3_tool_result.py",
+      "status": "done",
+      "attempts": 1,
+      "last_error": null,
+      "dependencies": [
+        "packages/provider/src/json-value/index.ts",
+        "packages/provider/src/shared/v3/shared-v3-provider-metadata.ts"
+      ]
+    },
+    "packages/provider/src/language-model/v3/language-model-v3-usage.ts": {
+      "target_path": "python/packages/provider/language_model/v3/language_model_v3_usage.py",
+      "status": "done",
+      "attempts": 1,
+      "last_error": null,
+      "dependencies": [
+        "packages/provider/src/json-value/index.ts"
+      ]
+    },
+    "packages/provider/src/reranking-model/v3/reranking-model-v3-call-options.ts": {
+      "target_path": "python/packages/provider/reranking_model/v3/reranking_model_v3_call_options.py",
+      "status": "done",
+      "attempts": 1,
+      "last_error": null,
+      "dependencies": [
+        "packages/provider/src/json-value/index.ts",
+        "packages/provider/src/shared/v3/index.ts"
+      ]
+    },
+    "packages/provider/src/shared/index.ts": {
+      "target_path": "python/packages/provider/shared/__init__.py",
+      "status": "done",
+      "attempts": 1,
+      "last_error": null,
+      "dependencies": [
+        "packages/provider/src/shared/v3/index.ts",
+        "packages/provider/src/shared/v2/index.ts"
+      ]
+    },
+    "packages/provider/src/embedding-model/v3/embedding-model-v3-call-options.ts": {
+      "target_path": "python/packages/provider/embedding_model/v3/embedding_model_v3_call_options.py",
+      "status": "done",
+      "attempts": 1,
+      "last_error": null,
+      "dependencies": [
+        "packages/provider/src/shared/index.ts"
+      ]
+    },
+    "packages/provider/src/image-model/v2/image-model-v2-call-options.ts": {
+      "target_path": "python/packages/provider/image_model/v2/image_model_v2_call_options.py",
+      "status": "done",
+      "attempts": 1,
+      "last_error": null,
+      "dependencies": [
+        "packages/provider/src/shared/index.ts"
+      ]
+    },
+    "packages/provider/src/image-model/v3/image-model-v3-file.ts": {
+      "target_path": "python/packages/provider/image_model/v3/image_model_v3_file.py",
+      "status": "done",
+      "attempts": 1,
+      "last_error": null,
+      "dependencies": [
+        "packages/provider/src/shared/index.ts"
+      ]
+    },
+    "packages/provider/src/language-model/v2/language-model-v2-function-tool.ts": {
+      "target_path": "python/packages/provider/language_model/v2/language_model_v2_function_tool.py",
+      "status": "done",
+      "attempts": 1,
+      "last_error": null,
+      "dependencies": [
+        "packages/provider/src/shared/index.ts"
+      ]
+    },
+    "packages/provider/src/language-model/v2/language-model-v2-reasoning.ts": {
+      "target_path": "python/packages/provider/language_model/v2/language_model_v2_reasoning.py",
+      "status": "done",
+      "attempts": 1,
+      "last_error": null,
+      "dependencies": [
+        "packages/provider/src/shared/index.ts"
+      ]
+    },
+    "packages/provider/src/language-model/v3/language-model-v3-file.ts": {
+      "target_path": "python/packages/provider/language_model/v3/language_model_v3_file.py",
+      "status": "done",
+      "attempts": 1,
+      "last_error": null,
+      "dependencies": [
+        "packages/provider/src/shared/index.ts"
+      ]
+    },
+    "packages/provider/src/language-model/v3/language-model-v3-function-tool.ts": {
+      "target_path": "python/packages/provider/language_model/v3/language_model_v3_function_tool.py",
+      "status": "done",
+      "attempts": 1,
+      "last_error": null,
+      "dependencies": [
+        "packages/provider/src/shared/index.ts",
+        "packages/provider/src/json-value/index.ts"
+      ]
+    },
+    "packages/provider/src/language-model/v3/language-model-v3-reasoning.ts": {
+      "target_path": "python/packages/provider/language_model/v3/language_model_v3_reasoning.py",
+      "status": "done",
+      "attempts": 1,
+      "last_error": null,
+      "dependencies": [
+        "packages/provider/src/shared/index.ts"
+      ]
+    },
+    "packages/provider/src/reranking-model/v3/reranking-model-v3.ts": {
+      "target_path": "python/packages/provider/reranking_model/v3/reranking_model_v3.py",
+      "status": "done",
+      "attempts": 1,
+      "last_error": null,
+      "dependencies": [
+        "packages/provider/src/reranking-model/v3/reranking-model-v3-call-options.ts"
+      ]
+    },
+    "packages/provider/src/speech-model/v2/speech-model-v2.ts": {
+      "target_path": "python/packages/provider/speech_model/v2/speech_model_v2.py",
+      "status": "done",
+      "attempts": 1,
+      "last_error": null,
+      "dependencies": [
+        "packages/provider/src/json-value/index.ts",
+        "packages/provider/src/shared/index.ts",
+        "packages/provider/src/speech-model/v2/speech-model-v2-call-options.ts",
+        "packages/provider/src/speech-model/v2/speech-model-v2-call-warning.ts"
+      ]
+    },
+    "packages/provider/src/speech-model/v3/speech-model-v3.ts": {
+      "target_path": "python/packages/provider/speech_model/v3/speech_model_v3.py",
+      "status": "done",
+      "attempts": 1,
+      "last_error": null,
+      "dependencies": [
+        "packages/provider/src/json-value/index.ts",
+        "packages/provider/src/shared/index.ts",
+        "packages/provider/src/shared/v3/shared-v3-warning.ts",
+        "packages/provider/src/speech-model/v3/speech-model-v3-call-options.ts"
+      ]
+    },
+    "packages/provider/src/transcription-model/v2/transcription-model-v2.ts": {
+      "target_path": "python/packages/provider/transcription_model/v2/transcription_model_v2.py",
+      "status": "done",
+      "attempts": 1,
+      "last_error": null,
+      "dependencies": [
+        "packages/provider/src/json-value/index.ts",
+        "packages/provider/src/shared/index.ts",
+        "packages/provider/src/transcription-model/v2/transcription-model-v2-call-options.ts",
+        "packages/provider/src/transcription-model/v2/transcription-model-v2-call-warning.ts"
+      ]
+    },
+    "packages/provider/src/transcription-model/v3/transcription-model-v3.ts": {
+      "target_path": "python/packages/provider/transcription_model/v3/transcription_model_v3.py",
+      "status": "done",
+      "attempts": 1,
+      "last_error": null,
+      "dependencies": [
+        "packages/provider/src/json-value/index.ts",
+        "packages/provider/src/shared/index.ts",
+        "packages/provider/src/shared/v3/shared-v3-warning.ts",
+        "packages/provider/src/transcription-model/v3/transcription-model-v3-call-options.ts"
+      ]
+    },
+    "packages/provider/src/video-model/v3/video-model-v3-file.ts": {
+      "target_path": "python/packages/provider/video_model/v3/video_model_v3_file.py",
+      "status": "done",
+      "attempts": 1,
+      "last_error": null,
+      "dependencies": [
+        "packages/provider/src/shared/index.ts"
+      ]
+    },
+    "packages/provider/src/embedding-model/v3/embedding-model-v3.ts": {
+      "target_path": "python/packages/provider/embedding_model/v3/embedding_model_v3.py",
+      "status": "done",
+      "attempts": 1,
+      "last_error": null,
+      "dependencies": [
+        "packages/provider/src/embedding-model/v3/embedding-model-v3-call-options.ts",
+        "packages/provider/src/embedding-model/v3/embedding-model-v3-result.ts"
+      ]
+    },
+    "packages/provider/src/image-model/v2/image-model-v2-call-warning.ts": {
+      "target_path": "python/packages/provider/image_model/v2/image_model_v2_call_warning.py",
+      "status": "done",
+      "attempts": 1,
+      "last_error": null,
+      "dependencies": [
+        "packages/provider/src/image-model/v2/image-model-v2-call-options.ts"
+      ]
+    },
+    "packages/provider/src/image-model/v3/image-model-v3-call-options.ts": {
+      "target_path": "python/packages/provider/image_model/v3/image_model_v3_call_options.py",
+      "status": "done",
+      "attempts": 1,
+      "last_error": null,
+      "dependencies": [
+        "packages/provider/src/shared/index.ts",
+        "packages/provider/src/image-model/v3/image-model-v3-file.ts"
+      ]
+    },
+    "packages/provider/src/language-model/v2/language-model-v2-call-options.ts": {
+      "target_path": "python/packages/provider/language_model/v2/language_model_v2_call_options.py",
+      "status": "done",
+      "attempts": 2,
+      "last_error": "prompt field is required in TypeScript (no '?') but given `default_factory=list` in Python, making it optional. Since `prompt` is the first field in the dataclass and all subsequent fields carry `| None = None` defaults, a bare `prompt: LanguageModelV2Prompt` (no default) would be syntactically valid. The current translation allows `LanguageModelV2CallOptions()` to be constructed without a prompt, violating the TypeScript contract.",
+      "dependencies": [
+        "packages/provider/src/shared/v2/shared-v2-provider-options.ts",
+        "packages/provider/src/language-model/v2/language-model-v2-function-tool.ts",
+        "packages/provider/src/language-model/v2/language-model-v2-prompt.ts",
+        "packages/provider/src/language-model/v2/language-model-v2-provider-defined-tool.ts",
+        "packages/provider/src/language-model/v2/language-model-v2-tool-choice.ts"
+      ]
+    },
+    "packages/provider/src/language-model/v2/language-model-v2-content.ts": {
+      "target_path": "python/packages/provider/language_model/v2/language_model_v2_content.py",
+      "status": "done",
+      "attempts": 1,
+      "last_error": null,
+      "dependencies": [
+        "packages/provider/src/language-model/v2/language-model-v2-file.ts",
+        "packages/provider/src/language-model/v2/language-model-v2-reasoning.ts",
+        "packages/provider/src/language-model/v2/language-model-v2-source.ts",
+        "packages/provider/src/language-model/v2/language-model-v2-text.ts",
+        "packages/provider/src/language-model/v2/language-model-v2-tool-call.ts",
+        "packages/provider/src/language-model/v2/language-model-v2-tool-result.ts"
+      ]
+    },
+    "packages/provider/src/language-model/v3/language-model-v3-call-options.ts": {
+      "target_path": "python/packages/provider/language_model/v3/language_model_v3_call_options.py",
+      "status": "done",
+      "attempts": 2,
+      "last_error": "The `prompt` field is **required** in the TypeScript source (no `?` modifier on `prompt: LanguageModelV3Prompt`), but the Python translation gives it `field(default_factory=list)`, making it optional at construction time. This changes the API contract: callers can construct `LanguageModelV3CallOptions()` with no prompt, producing a semantically invalid object that the TS interface would have rejected at compile time. The field should have no default (i.e., `prompt: LanguageModelV3Prompt` with no `= ...`) so it remains positional-required.",
+      "dependencies": [
+        "packages/provider/src/shared/v3/shared-v3-provider-options.ts",
+        "packages/provider/src/language-model/v3/language-model-v3-function-tool.ts",
+        "packages/provider/src/language-model/v3/language-model-v3-prompt.ts",
+        "packages/provider/src/language-model/v3/language-model-v3-provider-tool.ts",
+        "packages/provider/src/language-model/v3/language-model-v3-tool-choice.ts"
+      ]
+    },
+    "packages/provider/src/language-model/v3/language-model-v3-content.ts": {
+      "target_path": "python/packages/provider/language_model/v3/language_model_v3_content.py",
+      "status": "done",
+      "attempts": 1,
+      "last_error": null,
+      "dependencies": [
+        "packages/provider/src/language-model/v3/language-model-v3-file.ts",
+        "packages/provider/src/language-model/v3/language-model-v3-reasoning.ts",
+        "packages/provider/src/language-model/v3/language-model-v3-source.ts",
+        "packages/provider/src/language-model/v3/language-model-v3-text.ts",
+        "packages/provider/src/language-model/v3/language-model-v3-tool-approval-request.ts",
+        "packages/provider/src/language-model/v3/language-model-v3-tool-call.ts",
+        "packages/provider/src/language-model/v3/language-model-v3-tool-result.ts"
+      ]
+    },
+    "packages/provider/src/language-model/v3/language-model-v3-stream-part.ts": {
+      "target_path": "python/packages/provider/language_model/v3/language_model_v3_stream_part.py",
+      "status": "done",
+      "attempts": 1,
+      "last_error": null,
+      "dependencies": [
+        "packages/provider/src/shared/v3/shared-v3-provider-metadata.ts",
+        "packages/provider/src/shared/v3/shared-v3-warning.ts",
+        "packages/provider/src/language-model/v3/language-model-v3-file.ts",
+        "packages/provider/src/language-model/v3/language-model-v3-finish-reason.ts",
+        "packages/provider/src/language-model/v3/language-model-v3-response-metadata.ts",
+        "packages/provider/src/language-model/v3/language-model-v3-source.ts",
+        "packages/provider/src/language-model/v3/language-model-v3-tool-approval-request.ts",
+        "packages/provider/src/language-model/v3/language-model-v3-tool-call.ts",
+        "packages/provider/src/language-model/v3/language-model-v3-tool-result.ts",
+        "packages/provider/src/language-model/v3/language-model-v3-usage.ts"
+      ]
+    },
+    "packages/provider/src/reranking-model/v3/index.ts": {
+      "target_path": "python/packages/provider/reranking_model/v3/__init__.py",
+      "status": "done",
+      "attempts": 1,
+      "last_error": null,
+      "dependencies": [
+        "packages/provider/src/reranking-model/v3/reranking-model-v3.ts",
+        "packages/provider/src/reranking-model/v3/reranking-model-v3-call-options.ts"
+      ]
+    },
+    "packages/provider/src/speech-model/v2/index.ts": {
+      "target_path": "python/packages/provider/speech_model/v2/__init__.py",
+      "status": "done",
+      "attempts": 1,
+      "last_error": null,
+      "dependencies": [
+        "packages/provider/src/speech-model/v2/speech-model-v2.ts",
+        "packages/provider/src/speech-model/v2/speech-model-v2-call-options.ts",
+        "packages/provider/src/speech-model/v2/speech-model-v2-call-warning.ts"
+      ]
+    },
+    "packages/provider/src/speech-model/v3/index.ts": {
+      "target_path": "python/packages/provider/speech_model/v3/__init__.py",
+      "status": "done",
+      "attempts": 1,
+      "last_error": null,
+      "dependencies": [
+        "packages/provider/src/speech-model/v3/speech-model-v3.ts",
+        "packages/provider/src/speech-model/v3/speech-model-v3-call-options.ts"
+      ]
+    },
+    "packages/provider/src/transcription-model/v2/index.ts": {
+      "target_path": "python/packages/provider/transcription_model/v2/__init__.py",
+      "status": "done",
+      "attempts": 1,
+      "last_error": null,
+      "dependencies": [
+        "packages/provider/src/transcription-model/v2/transcription-model-v2.ts",
+        "packages/provider/src/transcription-model/v2/transcription-model-v2-call-options.ts",
+        "packages/provider/src/transcription-model/v2/transcription-model-v2-call-warning.ts"
+      ]
+    },
+    "packages/provider/src/transcription-model/v3/index.ts": {
+      "target_path": "python/packages/provider/transcription_model/v3/__init__.py",
+      "status": "done",
+      "attempts": 1,
+      "last_error": null,
+      "dependencies": [
+        "packages/provider/src/transcription-model/v3/transcription-model-v3.ts",
+        "packages/provider/src/transcription-model/v3/transcription-model-v3-call-options.ts"
+      ]
+    },
+    "packages/provider/src/video-model/v3/video-model-v3-call-options.ts": {
+      "target_path": "python/packages/provider/video_model/v3/video_model_v3_call_options.py",
+      "status": "done",
+      "attempts": 1,
+      "last_error": null,
+      "dependencies": [
+        "packages/provider/src/shared/index.ts",
+        "packages/provider/src/video-model/v3/video-model-v3-file.ts"
+      ]
+    },
+    "packages/provider/src/embedding-model/v3/index.ts": {
+      "target_path": "python/packages/provider/embedding_model/v3/__init__.py",
+      "status": "done",
+      "attempts": 1,
+      "last_error": null,
+      "dependencies": [
+        "packages/provider/src/embedding-model/v3/embedding-model-v3.ts",
+        "packages/provider/src/embedding-model/v3/embedding-model-v3-call-options.ts",
+        "packages/provider/src/embedding-model/v3/embedding-model-v3-embedding.ts",
+        "packages/provider/src/embedding-model/v3/embedding-model-v3-result.ts"
+      ]
+    },
+    "packages/provider/src/embedding-model-middleware/v3/embedding-model-v3-middleware.ts": {
+      "target_path": "python/packages/provider/embedding_model_middleware/v3/embedding_model_v3_middleware.py",
+      "status": "done",
+      "attempts": 2,
+      "last_error": "All six optional TypeScript methods (`overrideProvider?`, `overrideModelId?`, `overrideMaxEmbeddingsPerCall?`, `overrideSupportsParallelCalls?`, `transformParams?`, `wrapEmbed?`) are translated as **required** Protocol members with no default implementations. A TypeScript middleware with only `{ specificationVersion: 'v3' }` is fully valid, but the Python Protocol requires every method to be present for both static type-checking conformance and runtime `isinstance()` checks (the Protocol is `@runtime_checkable`). This breaks the optional-method contract entirely. Fix: provide default method implementations that return `None` (or raise `NotImplementedError` as a deliberate choice), or restructure as a non-Protocol base class / TypedDict with `NotRequired` callable fields.",
+      "dependencies": [
+        "packages/provider/src/embedding-model/v3/embedding-model-v3.ts",
+        "packages/provider/src/embedding-model/v3/embedding-model-v3-call-options.ts"
+      ]
+    },
+    "packages/provider/src/image-model/v2/image-model-v2.ts": {
+      "target_path": "python/packages/provider/image_model/v2/image_model_v2.py",
+      "status": "done",
+      "attempts": 1,
+      "last_error": null,
+      "dependencies": [
+        "packages/provider/src/json-value/index.ts",
+        "packages/provider/src/image-model/v2/image-model-v2-call-options.ts",
+        "packages/provider/src/image-model/v2/image-model-v2-call-warning.ts"
+      ]
+    },
+    "packages/provider/src/image-model/v2/index.ts": {
+      "target_path": "python/packages/provider/image_model/v2/__init__.py",
+      "status": "done",
+      "attempts": 1,
+      "last_error": null,
+      "dependencies": [
+        "packages/provider/src/image-model/v2/image-model-v2-call-options.ts",
+        "packages/provider/src/image-model/v2/image-model-v2-call-warning.ts"
+      ]
+    },
+    "packages/provider/src/image-model/v3/image-model-v3.ts": {
+      "target_path": "python/packages/provider/image_model/v3/image_model_v3.py",
+      "status": "done",
+      "attempts": 1,
+      "last_error": null,
+      "dependencies": [
+        "packages/provider/src/json-value/index.ts",
+        "packages/provider/src/image-model/v3/image-model-v3-usage.ts",
+        "packages/provider/src/image-model/v3/image-model-v3-call-options.ts",
+        "packages/provider/src/shared/v3/shared-v3-warning.ts"
+      ]
+    },
+    "packages/provider/src/image-model/v3/index.ts": {
+      "target_path": "python/packages/provider/image_model/v3/__init__.py",
+      "status": "done",
+      "attempts": 1,
+      "last_error": null,
+      "dependencies": [
+        "packages/provider/src/image-model/v3/image-model-v3-call-options.ts",
+        "packages/provider/src/image-model/v3/image-model-v3-usage.ts",
+        "packages/provider/src/image-model/v3/image-model-v3-file.ts"
+      ]
+    },
+    "packages/provider/src/language-model/v2/language-model-v2-call-warning.ts": {
+      "target_path": "python/packages/provider/language_model/v2/language_model_v2_call_warning.py",
+      "status": "done",
+      "attempts": 1,
+      "last_error": null,
+      "dependencies": [
+        "packages/provider/src/language-model/v2/language-model-v2-call-options.ts",
+        "packages/provider/src/language-model/v2/language-model-v2-function-tool.ts",
+        "packages/provider/src/language-model/v2/language-model-v2-provider-defined-tool.ts"
+      ]
+    },
+    "packages/provider/src/language-model/v3/language-model-v3-generate-result.ts": {
+      "target_path": "python/packages/provider/language_model/v3/language_model_v3_generate_result.py",
+      "status": "done",
+      "attempts": 2,
+      "last_error": "field(default_factory=LanguageModelV3FinishReason) on line 61 will raise TypeError at runtime. LanguageModelV3FinishReason is a frozen dataclass with a required positional argument `unified: UnifiedFinishReason` (no default). Calling it with no arguments \u2014 as a factory \u2014 will always fail with 'missing 1 required positional argument: unified'. A valid default is not obvious (the TS type has no concept of a sentinel/unknown value for the unified field), so this field should either be left without a default (making it required) or use a lambda with an explicit sentinel value such as field(default=None) if the type is relaxed to LanguageModelV3FinishReason | None, matching the Python Optional pattern.",
+      "dependencies": [
+        "packages/provider/src/shared/index.ts",
+        "packages/provider/src/shared/v3/shared-v3-provider-metadata.ts",
+        "packages/provider/src/language-model/v3/language-model-v3-content.ts",
+        "packages/provider/src/language-model/v3/language-model-v3-finish-reason.ts",
+        "packages/provider/src/language-model/v3/language-model-v3-response-metadata.ts",
+        "packages/provider/src/language-model/v3/language-model-v3-usage.ts"
+      ]
+    },
+    "packages/provider/src/language-model/v3/language-model-v3-stream-result.ts": {
+      "target_path": "python/packages/provider/language_model/v3/language_model_v3_stream_result.py",
+      "status": "done",
+      "attempts": 1,
+      "last_error": null,
+      "dependencies": [
+        "packages/provider/src/shared/index.ts",
+        "packages/provider/src/language-model/v3/language-model-v3-stream-part.ts"
+      ]
+    },
+    "packages/provider/src/reranking-model/index.ts": {
+      "target_path": "python/packages/provider/reranking_model/__init__.py",
+      "status": "done",
+      "attempts": 1,
+      "last_error": null,
+      "dependencies": [
+        "packages/provider/src/reranking-model/v3/index.ts"
+      ]
+    },
+    "packages/provider/src/speech-model/index.ts": {
+      "target_path": "python/packages/provider/speech_model/__init__.py",
+      "status": "done",
+      "attempts": 1,
+      "last_error": null,
+      "dependencies": [
+        "packages/provider/src/speech-model/v2/index.ts",
+        "packages/provider/src/speech-model/v3/index.ts"
+      ]
+    },
+    "packages/provider/src/transcription-model/index.ts": {
+      "target_path": "python/packages/provider/transcription_model/__init__.py",
+      "status": "done",
+      "attempts": 1,
+      "last_error": null,
+      "dependencies": [
+        "packages/provider/src/transcription-model/v2/index.ts",
+        "packages/provider/src/transcription-model/v3/index.ts"
+      ]
+    },
+    "packages/provider/src/video-model/v3/index.ts": {
+      "target_path": "python/packages/provider/video_model/v3/__init__.py",
+      "status": "done",
+      "attempts": 1,
+      "last_error": null,
+      "dependencies": [
+        "packages/provider/src/video-model/v3/video-model-v3-call-options.ts",
+        "packages/provider/src/video-model/v3/video-model-v3-file.ts"
+      ]
+    },
+    "packages/provider/src/video-model/v3/video-model-v3.ts": {
+      "target_path": "python/packages/provider/video_model/v3/video_model_v3.py",
+      "status": "done",
+      "attempts": 2,
+      "last_error": "GetMaxVideosPerCallFunction has a wrong callable signature. The TypeScript source defines it as `(options: { modelId: string }) => PromiseLike<number | undefined> | number | undefined` \u2014 the function receives an options object with a `modelId` property. The Python translation collapses this to `Callable[[str], int | None | Awaitable[int | None]]`, taking a bare `str`. This changes the calling contract: any implementor providing a callable for `max_videos_per_call` will write a function expecting a `str`, but SDK call-sites will pass a dict/object with a `model_id` key, causing a runtime mismatch. The correct translation should use a TypedDict (e.g. `class GetMaxVideosPerCallOptions(TypedDict): model_id: str`) or a one-field dataclass as the parameter type, not `str`.",
+      "dependencies": [
+        "packages/provider/src/video-model/v3/video-model-v3-call-options.ts",
+        "packages/provider/src/shared/v3/shared-v3-provider-metadata.ts",
+        "packages/provider/src/shared/v3/shared-v3-warning.ts"
+      ]
+    },
+    "packages/provider/src/embedding-model/index.ts": {
+      "target_path": "python/packages/provider/embedding_model/__init__.py",
+      "status": "done",
+      "attempts": 1,
+      "last_error": null,
+      "dependencies": [
+        "packages/provider/src/embedding-model/v3/index.ts",
+        "packages/provider/src/embedding-model/v2/index.ts"
+      ]
+    },
+    "packages/provider/src/embedding-model-middleware/v3/index.ts": {
+      "target_path": "python/packages/provider/embedding_model_middleware/v3/__init__.py",
+      "status": "done",
+      "attempts": 1,
+      "last_error": null,
+      "dependencies": [
+        "packages/provider/src/embedding-model-middleware/v3/embedding-model-v3-middleware.ts"
+      ]
+    },
+    "packages/provider/src/image-model/index.ts": {
+      "target_path": "python/packages/provider/image_model/__init__.py",
+      "status": "done",
+      "attempts": 1,
+      "last_error": null,
+      "dependencies": [
+        "packages/provider/src/image-model/v3/index.ts",
+        "packages/provider/src/image-model/v2/index.ts"
+      ]
+    },
+    "packages/provider/src/image-model-middleware/v3/image-model-v3-middleware.ts": {
+      "target_path": "python/packages/provider/image_model_middleware/v3/image_model_v3_middleware.py",
+      "status": "done",
+      "attempts": 1,
+      "last_error": null,
+      "dependencies": [
+        "packages/provider/src/image-model/v3/image-model-v3.ts",
+        "packages/provider/src/image-model/v3/image-model-v3-call-options.ts"
+      ]
+    },
+    "packages/provider/src/language-model/v2/language-model-v2-stream-part.ts": {
+      "target_path": "python/packages/provider/language_model/v2/language_model_v2_stream_part.py",
+      "status": "done",
+      "attempts": 1,
+      "last_error": null,
+      "dependencies": [
+        "packages/provider/src/shared/v2/shared-v2-provider-metadata.ts",
+        "packages/provider/src/language-model/v2/language-model-v2-call-warning.ts",
+        "packages/provider/src/language-model/v2/language-model-v2-file.ts",
+        "packages/provider/src/language-model/v2/language-model-v2-finish-reason.ts",
+        "packages/provider/src/language-model/v2/language-model-v2-response-metadata.ts",
+        "packages/provider/src/language-model/v2/language-model-v2-source.ts",
+        "packages/provider/src/language-model/v2/language-model-v2-tool-call.ts",
+        "packages/provider/src/language-model/v2/language-model-v2-tool-result.ts",
+        "packages/provider/src/language-model/v2/language-model-v2-usage.ts"
+      ]
+    },
+    "packages/provider/src/language-model/v3/language-model-v3.ts": {
+      "target_path": "python/packages/provider/language_model/v3/language_model_v3.py",
+      "status": "done",
+      "attempts": 1,
+      "last_error": null,
+      "dependencies": [
+        "packages/provider/src/language-model/v3/language-model-v3-call-options.ts",
+        "packages/provider/src/language-model/v3/language-model-v3-generate-result.ts",
+        "packages/provider/src/language-model/v3/language-model-v3-stream-result.ts"
+      ]
+    },
+    "packages/provider/src/video-model/index.ts": {
+      "target_path": "python/packages/provider/video_model/__init__.py",
+      "status": "done",
+      "attempts": 1,
+      "last_error": null,
+      "dependencies": [
+        "packages/provider/src/video-model/v3/index.ts"
+      ]
+    },
+    "packages/provider/src/embedding-model-middleware/index.ts": {
+      "target_path": "python/packages/provider/embedding_model_middleware/__init__.py",
+      "status": "done",
+      "attempts": 1,
+      "last_error": null,
+      "dependencies": [
+        "packages/provider/src/embedding-model-middleware/v3/index.ts"
+      ]
+    },
+    "packages/provider/src/image-model-middleware/v3/index.ts": {
+      "target_path": "python/packages/provider/image_model_middleware/v3/__init__.py",
+      "status": "done",
+      "attempts": 1,
+      "last_error": null,
+      "dependencies": [
+        "packages/provider/src/image-model-middleware/v3/image-model-v3-middleware.ts"
+      ]
+    },
+    "packages/provider/src/language-model/v2/language-model-v2.ts": {
+      "target_path": "python/packages/provider/language_model/v2/language_model_v2.py",
+      "status": "done",
+      "attempts": 1,
+      "last_error": null,
+      "dependencies": [
+        "packages/provider/src/shared/index.ts",
+        "packages/provider/src/shared/v2/shared-v2-provider-metadata.ts",
+        "packages/provider/src/language-model/v2/language-model-v2-call-options.ts",
+        "packages/provider/src/language-model/v2/language-model-v2-call-warning.ts",
+        "packages/provider/src/language-model/v2/language-model-v2-content.ts",
+        "packages/provider/src/language-model/v2/language-model-v2-finish-reason.ts",
+        "packages/provider/src/language-model/v2/language-model-v2-response-metadata.ts",
+        "packages/provider/src/language-model/v2/language-model-v2-stream-part.ts",
+        "packages/provider/src/language-model/v2/language-model-v2-usage.ts"
+      ]
+    },
+    "packages/provider/src/language-model/v3/index.ts": {
+      "target_path": "python/packages/provider/language_model/v3/__init__.py",
+      "status": "done",
+      "attempts": 1,
+      "last_error": null,
+      "dependencies": [
+        "packages/provider/src/language-model/v3/language-model-v3.ts",
+        "packages/provider/src/language-model/v3/language-model-v3-call-options.ts",
+        "packages/provider/src/language-model/v3/language-model-v3-content.ts",
+        "packages/provider/src/language-model/v3/language-model-v3-data-content.ts",
+        "packages/provider/src/language-model/v3/language-model-v3-file.ts",
+        "packages/provider/src/language-model/v3/language-model-v3-finish-reason.ts",
+        "packages/provider/src/language-model/v3/language-model-v3-function-tool.ts",
+        "packages/provider/src/language-model/v3/language-model-v3-generate-result.ts",
+        "packages/provider/src/language-model/v3/language-model-v3-prompt.ts",
+        "packages/provider/src/language-model/v3/language-model-v3-provider-tool.ts",
+        "packages/provider/src/language-model/v3/language-model-v3-reasoning.ts",
+        "packages/provider/src/language-model/v3/language-model-v3-response-metadata.ts",
+        "packages/provider/src/language-model/v3/language-model-v3-source.ts",
+        "packages/provider/src/language-model/v3/language-model-v3-stream-part.ts",
+        "packages/provider/src/language-model/v3/language-model-v3-stream-result.ts",
+        "packages/provider/src/language-model/v3/language-model-v3-text.ts",
+        "packages/provider/src/language-model/v3/language-model-v3-tool-approval-request.ts",
+        "packages/provider/src/language-model/v3/language-model-v3-tool-call.ts",
+        "packages/provider/src/language-model/v3/language-model-v3-tool-choice.ts",
+        "packages/provider/src/language-model/v3/language-model-v3-tool-result.ts",
+        "packages/provider/src/language-model/v3/language-model-v3-usage.ts"
+      ]
+    },
+    "packages/provider/src/language-model-middleware/v3/language-model-v3-middleware.ts": {
+      "target_path": "python/packages/provider/language_model_middleware/v3/language_model_v3_middleware.py",
+      "status": "done",
+      "attempts": 1,
+      "last_error": null,
+      "dependencies": [
+        "packages/provider/src/language-model/v3/language-model-v3.ts",
+        "packages/provider/src/language-model/v3/language-model-v3-call-options.ts",
+        "packages/provider/src/language-model/v3/language-model-v3-generate-result.ts",
+        "packages/provider/src/language-model/v3/language-model-v3-stream-result.ts"
+      ]
+    },
+    "packages/provider/src/provider/v3/provider-v3.ts": {
+      "target_path": "python/packages/provider/provider/v3/provider_v3.py",
+      "status": "done",
+      "attempts": 1,
+      "last_error": null,
+      "dependencies": [
+        "packages/provider/src/embedding-model/v3/embedding-model-v3.ts",
+        "packages/provider/src/image-model/v3/image-model-v3.ts",
+        "packages/provider/src/language-model/v3/language-model-v3.ts",
+        "packages/provider/src/reranking-model/v3/reranking-model-v3.ts",
+        "packages/provider/src/speech-model/v3/speech-model-v3.ts",
+        "packages/provider/src/transcription-model/v3/transcription-model-v3.ts"
+      ]
+    },
+    "packages/provider/src/image-model-middleware/index.ts": {
+      "target_path": "python/packages/provider/image_model_middleware/__init__.py",
+      "status": "done",
+      "attempts": 1,
+      "last_error": null,
+      "dependencies": [
+        "packages/provider/src/image-model-middleware/v3/index.ts"
+      ]
+    },
+    "packages/provider/src/language-model/v2/index.ts": {
+      "target_path": "python/packages/provider/language_model/v2/__init__.py",
+      "status": "done",
+      "attempts": 1,
+      "last_error": null,
+      "dependencies": [
+        "packages/provider/src/language-model/v2/language-model-v2.ts",
+        "packages/provider/src/language-model/v2/language-model-v2-call-options.ts",
+        "packages/provider/src/language-model/v2/language-model-v2-call-warning.ts",
+        "packages/provider/src/language-model/v2/language-model-v2-content.ts",
+        "packages/provider/src/language-model/v2/language-model-v2-data-content.ts",
+        "packages/provider/src/language-model/v2/language-model-v2-file.ts",
+        "packages/provider/src/language-model/v2/language-model-v2-finish-reason.ts",
+        "packages/provider/src/language-model/v2/language-model-v2-function-tool.ts",
+        "packages/provider/src/language-model/v2/language-model-v2-prompt.ts",
+        "packages/provider/src/language-model/v2/language-model-v2-provider-defined-tool.ts",
+        "packages/provider/src/language-model/v2/language-model-v2-reasoning.ts",
+        "packages/provider/src/language-model/v2/language-model-v2-response-metadata.ts",
+        "packages/provider/src/language-model/v2/language-model-v2-source.ts",
+        "packages/provider/src/language-model/v2/language-model-v2-stream-part.ts",
+        "packages/provider/src/language-model/v2/language-model-v2-text.ts",
+        "packages/provider/src/language-model/v2/language-model-v2-tool-call.ts",
+        "packages/provider/src/language-model/v2/language-model-v2-tool-choice.ts",
+        "packages/provider/src/language-model/v2/language-model-v2-usage.ts"
+      ]
+    },
+    "packages/provider/src/language-model-middleware/v2/language-model-v2-middleware.ts": {
+      "target_path": "python/packages/provider/language_model_middleware/v2/language_model_v2_middleware.py",
+      "status": "done",
+      "attempts": 1,
+      "last_error": null,
+      "dependencies": [
+        "packages/provider/src/language-model/v2/language-model-v2.ts",
+        "packages/provider/src/language-model/v2/language-model-v2-call-options.ts"
+      ]
+    },
+    "packages/provider/src/language-model-middleware/v3/index.ts": {
+      "target_path": "python/packages/provider/language_model_middleware/v3/__init__.py",
+      "status": "done",
+      "attempts": 1,
+      "last_error": null,
+      "dependencies": [
+        "packages/provider/src/language-model-middleware/v3/language-model-v3-middleware.ts"
+      ]
+    },
+    "packages/provider/src/provider/v2/provider-v2.ts": {
+      "target_path": "python/packages/provider/provider/v2/provider_v2.py",
+      "status": "done",
+      "attempts": 2,
+      "last_error": "Optional interface methods lost: In the TypeScript source, `transcriptionModel?` and `speechModel?` are marked with `?`, meaning implementors of `ProviderV2` are NOT required to provide them. The Python translation makes both `transcription_model` and `speech_model` required Protocol methods. Because `@runtime_checkable` is applied, `isinstance(obj, ProviderV2)` will return `False` for any class that validly implements the TypeScript `ProviderV2` without these two methods \u2014 a real runtime behavioral divergence. The correct translation should give these methods a default body in the Protocol (e.g., `raise NotImplementedError`) so that structural conformance is not broken for minimal implementors, matching the TypeScript optional-method semantics.",
+      "dependencies": [
+        "packages/provider/src/embedding-model/v2/embedding-model-v2.ts",
+        "packages/provider/src/image-model/v2/image-model-v2.ts",
+        "packages/provider/src/language-model/v2/language-model-v2.ts",
+        "packages/provider/src/speech-model/v2/speech-model-v2.ts",
+        "packages/provider/src/transcription-model/v2/transcription-model-v2.ts"
+      ]
+    },
+    "packages/provider/src/provider/v3/index.ts": {
+      "target_path": "python/packages/provider/provider/v3/__init__.py",
+      "status": "done",
+      "attempts": 1,
+      "last_error": null,
+      "dependencies": [
+        "packages/provider/src/provider/v3/provider-v3.ts"
+      ]
+    },
+    "packages/provider/src/language-model/index.ts": {
+      "target_path": "python/packages/provider/language_model/__init__.py",
+      "status": "done",
+      "attempts": 1,
+      "last_error": null,
+      "dependencies": [
+        "packages/provider/src/language-model/v3/index.ts",
+        "packages/provider/src/language-model/v2/index.ts"
+      ]
+    },
+    "packages/provider/src/language-model-middleware/v2/index.ts": {
+      "target_path": "python/packages/provider/language_model_middleware/v2/__init__.py",
+      "status": "done",
+      "attempts": 1,
+      "last_error": null,
+      "dependencies": [
+        "packages/provider/src/language-model-middleware/v2/language-model-v2-middleware.ts"
+      ]
+    },
+    "packages/provider/src/provider/v2/index.ts": {
+      "target_path": "python/packages/provider/provider/v2/__init__.py",
+      "status": "done",
+      "attempts": 1,
+      "last_error": null,
+      "dependencies": [
+        "packages/provider/src/provider/v2/provider-v2.ts"
+      ]
+    },
+    "packages/provider/src/language-model-middleware/index.ts": {
+      "target_path": "python/packages/provider/language_model_middleware/__init__.py",
+      "status": "done",
+      "attempts": 1,
+      "last_error": null,
+      "dependencies": [
+        "packages/provider/src/language-model-middleware/v3/index.ts",
+        "packages/provider/src/language-model-middleware/v2/index.ts"
+      ]
+    },
+    "packages/provider/src/provider/index.ts": {
+      "target_path": "python/packages/provider/provider/__init__.py",
+      "status": "done",
+      "attempts": 1,
+      "last_error": null,
+      "dependencies": [
+        "packages/provider/src/provider/v3/index.ts",
+        "packages/provider/src/provider/v2/index.ts"
+      ]
+    },
+    "packages/provider/src/index.ts": {
+      "target_path": "python/packages/provider/__init__.py",
+      "status": "done",
+      "attempts": 1,
+      "last_error": null,
+      "dependencies": [
+        "packages/provider/src/embedding-model/index.ts",
+        "packages/provider/src/errors/index.ts",
+        "packages/provider/src/image-model/index.ts",
+        "packages/provider/src/image-model-middleware/index.ts",
+        "packages/provider/src/json-value/index.ts",
+        "packages/provider/src/language-model-middleware/index.ts",
+        "packages/provider/src/embedding-model-middleware/index.ts",
+        "packages/provider/src/language-model/index.ts",
+        "packages/provider/src/provider/index.ts",
+        "packages/provider/src/reranking-model/index.ts",
+        "packages/provider/src/shared/index.ts",
+        "packages/provider/src/speech-model/index.ts",
+        "packages/provider/src/transcription-model/index.ts",
+        "packages/provider/src/video-model/index.ts"
+      ]
+    }
+  },
+  "summary": {
+    "total": 133,
+    "done": 133,
+    "failed": 0
+  }
+}

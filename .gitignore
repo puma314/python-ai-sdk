@@ -17,3 +17,5 @@ tsconfig.vitest-temp.json
 *.local
 *.tsbuildinfo
 packages/ai/docs
+__pycache__
+.venv
