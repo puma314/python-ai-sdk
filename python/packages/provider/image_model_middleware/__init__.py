@@ -1,5 +1,12 @@
-"""Public API for this package.
+from __future__ import annotations
 
-Corresponds to: packages/provider/src/image-model-middleware/index.ts
-TODO: implement exports
+"""Public API for image model middleware.
+
+Translated from: packages/provider/src/image-model-middleware/index.ts
 """
+
+from .v3 import ImageModelV3Middleware
+
+__all__ = [
+    "ImageModelV3Middleware",
+]
