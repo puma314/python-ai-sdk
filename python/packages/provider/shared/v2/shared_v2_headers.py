@@ -1,5 +1,7 @@
-"""Stub for shared_v2_headers.
+from __future__ import annotations
+"""Shared V2 headers type definition.
 
 Translated from: packages/provider/src/shared/v2/shared-v2-headers.ts
-TODO: implement
 """
+
+SharedV2Headers = dict[str, str]
