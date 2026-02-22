@@ -1,5 +1,10 @@
-"""Public API for this package.
+from __future__ import annotations
 
-Corresponds to: packages/provider/src/provider/v3/index.ts
-TODO: implement exports
+"""Public API for provider v3.
+
+Translated from: packages/provider/src/provider/v3/index.ts
 """
+
+from .provider_v3 import ProviderV3
+
+__all__ = ["ProviderV3"]
