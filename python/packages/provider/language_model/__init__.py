@@ -1,5 +1,8 @@
-"""Public API for this package.
+from __future__ import annotations
+"""Public API for language model.
 
-Corresponds to: packages/provider/src/language-model/index.ts
-TODO: implement exports
+Translated from: packages/provider/src/language-model/index.ts
 """
+
+from .v3 import *  # noqa: F401,F403
+from .v2 import *  # noqa: F401,F403
