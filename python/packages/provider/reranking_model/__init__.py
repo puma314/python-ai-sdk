@@ -1,5 +1,13 @@
-"""Public API for this package.
+from __future__ import annotations
 
-Corresponds to: packages/provider/src/reranking-model/index.ts
-TODO: implement exports
+"""Public API for reranking model.
+
+Translated from: packages/provider/src/reranking-model/index.ts
 """
+
+from .v3 import RerankingModelV3, RerankingModelV3CallOptions
+
+__all__ = [
+    "RerankingModelV3",
+    "RerankingModelV3CallOptions",
+]
