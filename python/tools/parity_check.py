@@ -47,9 +47,9 @@ def _mapped_target_name(relative_path: Path) -> str:
   result = result.replace('-', '_')
 
   if result.endswith('.test-d.ts'):
-    return result.removesuffix('.test-d.ts') + '.test.py'
+    return result.removesuffix('.test-d.ts') + '_test.py'
   if result.endswith('.test.ts'):
-    return result.removesuffix('.test.ts') + '.test.py'
+    return result.removesuffix('.test.ts') + '_test.py'
   if result.endswith('.ts'):
     return result.removesuffix('.ts') + '.py'
   if result.endswith('.tsx'):

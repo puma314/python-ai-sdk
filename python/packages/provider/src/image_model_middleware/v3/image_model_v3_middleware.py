@@ -13,7 +13,7 @@ class ImageModelV3Middleware(TypedDict):
   overrideProvider: NotRequired[Callable[[dict[str, ImageModelV3]], str]]
   overrideModelId: NotRequired[Callable[[dict[str, ImageModelV3]], str]]
   overrideMaxImagesPerCall: NotRequired[
-    Callable[[dict[str, ImageModelV3]], ImageModelV3['maxImagesPerCall']]
+    Callable[[dict[str, ImageModelV3]], object]
   ]
   transformParams: NotRequired[
     Callable[[dict[str, object]], ImageModelV3CallOptions]
