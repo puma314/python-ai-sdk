@@ -9,9 +9,9 @@ from dataclasses import dataclass
 from datetime import datetime
 from typing import Any
 
-from ai_sdk.provider.shared.v3.shared_v3_headers import SharedV3Headers
-from ai_sdk.provider.shared.v3.shared_v3_provider_metadata import SharedV3ProviderMetadata
-from ai_sdk.provider.shared.v3.shared_v3_warning import SharedV3Warning
+from ...shared.v3.shared_v3_headers import SharedV3Headers
+from ...shared.v3.shared_v3_provider_metadata import SharedV3ProviderMetadata
+from ...shared.v3.shared_v3_warning import SharedV3Warning
 from .language_model_v3_content import LanguageModelV3Content
 from .language_model_v3_finish_reason import LanguageModelV3FinishReason
 from .language_model_v3_usage import LanguageModelV3Usage

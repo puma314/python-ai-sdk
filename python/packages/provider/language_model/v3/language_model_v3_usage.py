@@ -7,7 +7,7 @@ Translated from: packages/provider/src/language-model/v3/language-model-v3-usage
 
 from dataclasses import dataclass
 
-from ai_sdk.provider.json_value.json_value import JSONObject
+from ...json_value.json_value import JSONObject
 
 
 @dataclass(frozen=True)

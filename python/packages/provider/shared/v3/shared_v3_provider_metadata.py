@@ -24,6 +24,6 @@ Example::
 Translated from: packages/provider/src/shared/v3/shared-v3-provider-metadata.ts
 """
 
-from ai_sdk.provider.json_value.json_value import JSONObject
+from ...json_value.json_value import JSONObject
 
 SharedV3ProviderMetadata = dict[str, JSONObject]

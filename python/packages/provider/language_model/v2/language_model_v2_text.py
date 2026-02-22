@@ -8,7 +8,7 @@ Translated from: packages/provider/src/language-model/v2/language-model-v2-text.
 from dataclasses import dataclass, field
 from typing import Literal
 
-from ai_sdk.provider.shared.v2.shared_v2_provider_metadata import (
+from ...shared.v2.shared_v2_provider_metadata import (
     SharedV2ProviderMetadata,
 )
 

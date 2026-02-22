@@ -8,7 +8,7 @@ Translated from: packages/provider/src/language-model/v3/language-model-v3-sourc
 from dataclasses import dataclass
 from typing import Literal, Union
 
-from ai_sdk.provider.shared.v3.shared_v3_provider_metadata import (
+from ...shared.v3.shared_v3_provider_metadata import (
     SharedV3ProviderMetadata,
 )
 

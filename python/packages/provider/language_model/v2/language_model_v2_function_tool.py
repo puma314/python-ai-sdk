@@ -8,7 +8,7 @@ Translated from: packages/provider/src/language-model/v2/language-model-v2-funct
 from dataclasses import dataclass, field
 from typing import Any, Literal
 
-from ai_sdk.provider.shared.v2.shared_v2_provider_options import SharedV2ProviderOptions
+from ...shared.v2.shared_v2_provider_options import SharedV2ProviderOptions
 
 
 @dataclass(frozen=True)

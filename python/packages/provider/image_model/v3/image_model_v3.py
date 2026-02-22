@@ -9,12 +9,12 @@ from dataclasses import dataclass, field
 from datetime import datetime
 from typing import Any, Awaitable, Callable, Literal, Protocol, Union, runtime_checkable
 
-from ai_sdk.provider.image_model.v3.image_model_v3_call_options import (
+from .image_model_v3_call_options import (
     ImageModelV3CallOptions,
 )
-from ai_sdk.provider.image_model.v3.image_model_v3_usage import ImageModelV3Usage
-from ai_sdk.provider.json_value import JSONArray, JSONValue
-from ai_sdk.provider.shared.v3.shared_v3_warning import SharedV3Warning
+from .image_model_v3_usage import ImageModelV3Usage
+from ...json_value import JSONArray, JSONValue
+from ...shared.v3.shared_v3_warning import SharedV3Warning
 
 ImageModelV3ProviderMetadata = dict[str, Any]
 """Provider-specific metadata.

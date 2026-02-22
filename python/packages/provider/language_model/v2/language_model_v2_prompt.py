@@ -16,11 +16,11 @@ Translated from: packages/provider/src/language-model/v2/language-model-v2-promp
 from dataclasses import dataclass, field
 from typing import Any, Literal, Union
 
-from ai_sdk.provider.json_value.json_value import JSONValue
-from ai_sdk.provider.language_model.v2.language_model_v2_data_content import (
+from ...json_value.json_value import JSONValue
+from .language_model_v2_data_content import (
     LanguageModelV2DataContent,
 )
-from ai_sdk.provider.shared.v2.shared_v2_provider_options import (
+from ...shared.v2.shared_v2_provider_options import (
     SharedV2ProviderOptions,
 )
 

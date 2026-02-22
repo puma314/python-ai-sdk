@@ -8,7 +8,7 @@ Translated from: packages/provider/src/image-model/v3/image-model-v3-file.ts
 from dataclasses import dataclass, field
 from typing import Literal, Union
 
-from ai_sdk.provider.shared import SharedV3ProviderMetadata
+from ...shared import SharedV3ProviderMetadata
 
 
 @dataclass(frozen=True)

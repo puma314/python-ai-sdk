@@ -8,7 +8,7 @@ Translated from: packages/provider/src/video-model/v3/video-model-v3-file.ts
 from dataclasses import dataclass, field
 from typing import Literal, Union
 
-from ai_sdk.provider.shared.v3.shared_v3_provider_metadata import (
+from ...shared.v3.shared_v3_provider_metadata import (
     SharedV3ProviderMetadata,
 )
 

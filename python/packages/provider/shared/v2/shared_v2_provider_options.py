@@ -24,6 +24,6 @@ Example::
 Translated from: packages/provider/src/shared/v2/shared-v2-provider-options.ts
 """
 
-from ai_sdk.provider.json_value.json_value import JSONValue
+from ...json_value.json_value import JSONValue
 
 SharedV2ProviderOptions = dict[str, dict[str, JSONValue]]

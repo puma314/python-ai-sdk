@@ -9,13 +9,13 @@ from dataclasses import dataclass
 from datetime import datetime
 from typing import Awaitable, Literal, Protocol, runtime_checkable
 
-from ai_sdk.provider.image_model.v2.image_model_v2_call_options import (
+from .image_model_v2_call_options import (
     ImageModelV2CallOptions,
 )
-from ai_sdk.provider.image_model.v2.image_model_v2_call_warning import (
+from .image_model_v2_call_warning import (
     ImageModelV2CallWarning,
 )
-from ai_sdk.provider.json_value import JSONArray, JSONValue
+from ...json_value import JSONArray, JSONValue
 
 ImageModelV2ProviderMetadata = dict[str, JSONValue]
 """Provider metadata keyed by provider name.

@@ -10,8 +10,8 @@ import re
 from dataclasses import dataclass, field
 from typing import Any
 
-from ai_sdk.provider.image_model.v3.image_model_v3_file import ImageModelV3File
-from ai_sdk.provider.shared import SharedV3ProviderOptions
+from .image_model_v3_file import ImageModelV3File
+from ...shared import SharedV3ProviderOptions
 
 
 def _validate_size(size: str) -> str:

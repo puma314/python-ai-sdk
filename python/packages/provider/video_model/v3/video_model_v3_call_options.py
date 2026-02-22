@@ -9,8 +9,8 @@ import asyncio
 from dataclasses import dataclass, field
 from typing import Any
 
-from ai_sdk.provider.shared import SharedV3ProviderOptions
-from ai_sdk.provider.video_model.v3.video_model_v3_file import VideoModelV3File
+from ...shared import SharedV3ProviderOptions
+from .video_model_v3_file import VideoModelV3File
 
 
 @dataclass(frozen=True)

@@ -10,11 +10,11 @@ from collections.abc import Awaitable
 from dataclasses import dataclass, field
 from typing import Callable, Literal, Protocol, TypedDict, Union
 
-from ai_sdk.provider.shared.v3.shared_v3_provider_metadata import (
+from ...shared.v3.shared_v3_provider_metadata import (
     SharedV3ProviderMetadata,
 )
-from ai_sdk.provider.shared.v3.shared_v3_warning import SharedV3Warning
-from ai_sdk.provider.video_model.v3.video_model_v3_call_options import (
+from ...shared.v3.shared_v3_warning import SharedV3Warning
+from .video_model_v3_call_options import (
     VideoModelV3CallOptions,
 )
 

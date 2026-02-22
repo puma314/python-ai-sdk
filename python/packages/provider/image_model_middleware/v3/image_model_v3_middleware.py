@@ -7,12 +7,12 @@ Translated from: packages/provider/src/image-model-middleware/v3/image-model-v3-
 
 from typing import Awaitable, Callable, Literal, Protocol, runtime_checkable
 
-from ai_sdk.provider.image_model.v3.image_model_v3 import (
+from ...image_model.v3.image_model_v3 import (
     ImageModelV3,
     ImageModelV3GenerateResponse,
     GetMaxImagesPerCallFunction,
 )
-from ai_sdk.provider.image_model.v3.image_model_v3_call_options import (
+from ...image_model.v3.image_model_v3_call_options import (
     ImageModelV3CallOptions,
 )
 

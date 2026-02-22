@@ -11,7 +11,7 @@ Translated from: packages/provider/src/language-model/v3/language-model-v3-file.
 from dataclasses import dataclass, field
 from typing import Literal
 
-from ai_sdk.provider.shared.v3.shared_v3_provider_metadata import (
+from ...shared.v3.shared_v3_provider_metadata import (
     SharedV3ProviderMetadata,
 )
 

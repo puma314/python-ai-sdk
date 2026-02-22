@@ -8,19 +8,19 @@ Translated from: packages/provider/src/language-model/v2/language-model-v2-call-
 from dataclasses import dataclass
 from typing import Any, Literal, Union
 
-from ai_sdk.provider.language_model.v2.language_model_v2_function_tool import (
+from .language_model_v2_function_tool import (
     LanguageModelV2FunctionTool,
 )
-from ai_sdk.provider.language_model.v2.language_model_v2_prompt import (
+from .language_model_v2_prompt import (
     LanguageModelV2Prompt,
 )
-from ai_sdk.provider.language_model.v2.language_model_v2_provider_defined_tool import (
+from .language_model_v2_provider_defined_tool import (
     LanguageModelV2ProviderDefinedTool,
 )
-from ai_sdk.provider.language_model.v2.language_model_v2_tool_choice import (
+from .language_model_v2_tool_choice import (
     LanguageModelV2ToolChoice,
 )
-from ai_sdk.provider.shared.v2.shared_v2_provider_options import (
+from ...shared.v2.shared_v2_provider_options import (
     SharedV2ProviderOptions,
 )
 

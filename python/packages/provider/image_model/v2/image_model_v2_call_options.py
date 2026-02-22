@@ -8,7 +8,7 @@ Translated from: packages/provider/src/image-model/v2/image-model-v2-call-option
 import asyncio
 from dataclasses import dataclass, field
 
-from ai_sdk.provider.shared.v2.shared_v2_provider_options import SharedV2ProviderOptions
+from ...shared.v2.shared_v2_provider_options import SharedV2ProviderOptions
 
 
 @dataclass(frozen=True)
