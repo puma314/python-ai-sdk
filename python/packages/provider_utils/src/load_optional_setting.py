@@ -1,20 +1,20 @@
-"""
-Auto-translated Python mirror for `src/load-optional-setting.ts`.
-
-Loads an optional `string` setting from the environment or a parameter.
-@param settingValue - The setting value.
-@param environmentVariableName - The environment variable name.
-@returns The setting value.
-/
-"""
+"""Configuration setting loaders."""
 
 from __future__ import annotations
 
-from typing import Any, TypeAlias
+import os
 
 
-def loadOptionalSetting(*args: Any, **kwargs: Any) -> Any:
-  """Auto-translated function placeholder."""
-  return None
+def loadOptionalSetting(
+  *,
+  settingValue: str | None = None,
+  environmentVariableName: str,
+) -> str | None:
+  """Load optional string setting from explicit value or environment."""
+
+  if settingValue is not None:
+    return settingValue
+  return os.getenv(environmentVariableName)
+
 
 __all__ = ['loadOptionalSetting']

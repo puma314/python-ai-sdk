@@ -1,11 +1,19 @@
-"""
-Auto-translated Python mirror for `tsup.config.ts`.
-"""
+"""Build configuration mirror for anthropic package."""
 
-from __future__ import annotations
-
-from typing import Any, TypeAlias
-
-default_export: Any = None
+default_export = [
+  {
+    'entry': ['src/index.ts'],
+    'format': ['cjs', 'esm'],
+    'dts': True,
+    'sourcemap': True,
+  },
+  {
+    'entry': ['src/internal/index.ts'],
+    'outDir': 'dist/internal',
+    'format': ['cjs', 'esm'],
+    'dts': True,
+    'sourcemap': True,
+  },
+]
 
 __all__ = ['default_export']

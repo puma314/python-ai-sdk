@@ -1,11 +1,5 @@
-"""
-Auto-translated Python mirror for `src/tool/memory_20250818.ts`.
-"""
+"""Anthropic memory tool (2025-08-18)."""
 
-from __future__ import annotations
-
-from typing import Any, TypeAlias
-
-memory_20250818: Any = None
+from ..anthropic_tools import memory_20250818
 
 __all__ = ['memory_20250818']

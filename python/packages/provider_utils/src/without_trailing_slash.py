@@ -1,14 +1,12 @@
-"""
-Auto-translated Python mirror for `src/without-trailing-slash.ts`.
-"""
-
-from __future__ import annotations
-
-from typing import Any, TypeAlias
+"""String URL helpers."""
 
 
-def withoutTrailingSlash(*args: Any, **kwargs: Any) -> Any:
-  """Auto-translated function placeholder."""
-  return None
+def withoutTrailingSlash(url: str | None) -> str | None:
+  """Remove one trailing slash from a URL string."""
+
+  if url is None:
+    return None
+  return url[:-1] if url.endswith('/') else url
+
 
 __all__ = ['withoutTrailingSlash']

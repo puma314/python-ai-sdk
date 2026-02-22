@@ -1,13 +1,50 @@
-"""
-Auto-translated Python mirror for `src/tool/web-fetch-20250910.ts`.
-"""
+"""Anthropic web fetch tool (2025-09-10)."""
 
 from __future__ import annotations
 
-from typing import Any, TypeAlias
+from pydantic import BaseModel
 
-webFetch_20250910: Any = None
-webFetch_20250910ArgsSchema: Any = None
-webFetch_20250910OutputSchema: Any = None
+from ..anthropic_tools import webFetch_20250910
 
-__all__ = ['webFetch_20250910', 'webFetch_20250910ArgsSchema', 'webFetch_20250910OutputSchema']
+
+class WebFetch_20250910Args(BaseModel):
+  maxUses: int | None = None
+  allowedDomains: list[str] | None = None
+  blockedDomains: list[str] | None = None
+  citations: dict[str, bool] | None = None
+  maxContentTokens: int | None = None
+
+
+class WebFetchResultSource(BaseModel):
+  type: str
+  mediaType: str
+  data: str
+
+
+class WebFetchResultContent(BaseModel):
+  type: str
+  title: str | None
+  citations: dict[str, bool] | None = None
+  source: WebFetchResultSource
+
+
+class WebFetch_20250910Output(BaseModel):
+  type: str
+  url: str
+  content: WebFetchResultContent
+  retrievedAt: str | None
+
+
+def webFetch_20250910ArgsSchema() -> type[WebFetch_20250910Args]:
+  return WebFetch_20250910Args
+
+
+def webFetch_20250910OutputSchema() -> type[WebFetch_20250910Output]:
+  return WebFetch_20250910Output
+
+
+__all__ = [
+  'webFetch_20250910',
+  'webFetch_20250910ArgsSchema',
+  'webFetch_20250910OutputSchema',
+]

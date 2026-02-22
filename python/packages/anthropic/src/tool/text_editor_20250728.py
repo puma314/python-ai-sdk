@@ -1,12 +1,20 @@
-"""
-Auto-translated Python mirror for `src/tool/text-editor_20250728.ts`.
-"""
+"""Anthropic text editor tool (2025-07-28)."""
 
 from __future__ import annotations
 
-from typing import Any, TypeAlias
+from pydantic import BaseModel
 
-textEditor_20250728: Any = None
-textEditor_20250728ArgsSchema: Any = None
+from ..anthropic_tools import textEditor_20250728
+
+
+class TextEditor_20250728Args(BaseModel):
+  maxCharacters: int | None = None
+
+
+def textEditor_20250728ArgsSchema() -> type[TextEditor_20250728Args]:
+  """Return args schema for text editor tool options."""
+
+  return TextEditor_20250728Args
+
 
 __all__ = ['textEditor_20250728', 'textEditor_20250728ArgsSchema']

@@ -1,11 +1,5 @@
-"""
-Auto-translated Python mirror for `src/tool/computer_20241022.ts`.
-"""
+"""Anthropic computer-use tool (2024-10-22)."""
 
-from __future__ import annotations
-
-from typing import Any, TypeAlias
-
-computer_20241022: Any = None
+from ..anthropic_tools import computer_20241022
 
 __all__ = ['computer_20241022']

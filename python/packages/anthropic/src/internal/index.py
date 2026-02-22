@@ -1,28 +1,14 @@
-"""
-Auto-translated Python mirror for `src/internal/index.ts`.
-"""
+"""Internal exports for anthropic package."""
 
-from __future__ import annotations
+from ..anthropic_messages_language_model import AnthropicMessagesLanguageModel
+from ..anthropic_messages_options import AnthropicMessagesModelId
+from ..anthropic_prepare_tools import prepareTools
+from ..anthropic_tools import anthropicTools
 
-from typing import Any, TypeAlias
-
-try:
-  from ..anthropic_messages_language_model import AnthropicMessagesLanguageModel
-except Exception:
-  AnthropicMessagesLanguageModel: Any = None
-
-try:
-  from ..anthropic_tools import anthropicTools
-except Exception:
-  anthropicTools: Any = None
-
-try:
-  from ..anthropic_messages_options import AnthropicMessagesModelId
-except Exception:
-  AnthropicMessagesModelId: Any = None
-
-try:
-  from ..anthropic_prepare_tools import prepareTools
-except Exception:
-  prepareTools: Any = None
+__all__ = [
+  'AnthropicMessagesLanguageModel',
+  'AnthropicMessagesModelId',
+  'anthropicTools',
+  'prepareTools',
+]
 

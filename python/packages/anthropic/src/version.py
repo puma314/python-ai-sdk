@@ -1,13 +1,5 @@
-"""
-Auto-translated Python mirror for `src/version.ts`.
+"""Package version constant."""
 
-Version string of this package injected at build time.
-"""
-
-from __future__ import annotations
-
-from typing import Any, TypeAlias
-
-VERSION: Any = None
+VERSION = '0.0.0'
 
 __all__ = ['VERSION']

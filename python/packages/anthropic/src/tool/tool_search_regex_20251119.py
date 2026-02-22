@@ -1,12 +1,19 @@
-"""
-Auto-translated Python mirror for `src/tool/tool-search-regex_20251119.ts`.
-"""
+"""Anthropic regex-based tool-search tool (2025-11-19)."""
 
 from __future__ import annotations
 
-from typing import Any, TypeAlias
+from pydantic import BaseModel
 
-toolSearchRegex_20251119: Any = None
-toolSearchRegex_20251119OutputSchema: Any = None
+from ..anthropic_tools import toolSearchRegex_20251119
+
+
+class ToolReference(BaseModel):
+  type: str
+  toolName: str
+
+
+def toolSearchRegex_20251119OutputSchema() -> type[ToolReference]:
+  return ToolReference
+
 
 __all__ = ['toolSearchRegex_20251119', 'toolSearchRegex_20251119OutputSchema']

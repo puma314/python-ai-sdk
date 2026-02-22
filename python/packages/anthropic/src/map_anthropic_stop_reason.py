@@ -1,14 +1,26 @@
-"""
-Auto-translated Python mirror for `src/map-anthropic-stop-reason.ts`.
-"""
+"""Anthropic stop-reason mapping helpers."""
 
-from __future__ import annotations
-
-from typing import Any, TypeAlias
+from typing import Literal
 
 
-def mapAnthropicStopReason(*args: Any, **kwargs: Any) -> Any:
-  """Auto-translated function placeholder."""
-  return None
+def mapAnthropicStopReason(
+  *,
+  finishReason: str | None,
+  isJsonResponseFromTool: bool = False,
+) -> Literal['stop', 'content-filter', 'tool-calls', 'length', 'other']:
+  """Map Anthropic stop reasons into unified v3 finish reasons."""
+
+  if finishReason in {'pause_turn', 'end_turn', 'stop_sequence'}:
+    return 'stop'
+  if finishReason == 'refusal':
+    return 'content-filter'
+  if finishReason == 'tool_use':
+    return 'stop' if isJsonResponseFromTool else 'tool-calls'
+  if finishReason in {'max_tokens', 'model_context_window_exceeded'}:
+    return 'length'
+  if finishReason == 'compaction':
+    return 'other'
+  return 'other'
+
 
 __all__ = ['mapAnthropicStopReason']

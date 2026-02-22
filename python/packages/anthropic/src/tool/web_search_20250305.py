@@ -1,13 +1,37 @@
-"""
-Auto-translated Python mirror for `src/tool/web-search_20250305.ts`.
-"""
+"""Anthropic web search tool (2025-03-05)."""
 
 from __future__ import annotations
 
-from typing import Any, TypeAlias
+from pydantic import BaseModel
 
-webSearch_20250305: Any = None
-webSearch_20250305ArgsSchema: Any = None
-webSearch_20250305OutputSchema: Any = None
+from ..anthropic_tools import webSearch_20250305
 
-__all__ = ['webSearch_20250305', 'webSearch_20250305ArgsSchema', 'webSearch_20250305OutputSchema']
+
+class WebSearch_20250305Args(BaseModel):
+  maxUses: int | None = None
+  allowedDomains: list[str] | None = None
+  blockedDomains: list[str] | None = None
+  userLocation: dict[str, str] | None = None
+
+
+class WebSearchResult(BaseModel):
+  url: str
+  title: str | None
+  pageAge: str | None
+  encryptedContent: str
+  type: str
+
+
+def webSearch_20250305ArgsSchema() -> type[WebSearch_20250305Args]:
+  return WebSearch_20250305Args
+
+
+def webSearch_20250305OutputSchema() -> type[WebSearchResult]:
+  return WebSearchResult
+
+
+__all__ = [
+  'webSearch_20250305',
+  'webSearch_20250305ArgsSchema',
+  'webSearch_20250305OutputSchema',
+]

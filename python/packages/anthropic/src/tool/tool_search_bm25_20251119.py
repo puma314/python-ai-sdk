@@ -1,12 +1,19 @@
-"""
-Auto-translated Python mirror for `src/tool/tool-search-bm25_20251119.ts`.
-"""
+"""Anthropic BM25 tool-search tool (2025-11-19)."""
 
 from __future__ import annotations
 
-from typing import Any, TypeAlias
+from pydantic import BaseModel
 
-toolSearchBm25_20251119: Any = None
-toolSearchBm25_20251119OutputSchema: Any = None
+from ..anthropic_tools import toolSearchBm25_20251119
+
+
+class ToolReference(BaseModel):
+  type: str
+  toolName: str
+
+
+def toolSearchBm25_20251119OutputSchema() -> type[ToolReference]:
+  return ToolReference
+
 
 __all__ = ['toolSearchBm25_20251119', 'toolSearchBm25_20251119OutputSchema']
