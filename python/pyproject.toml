@@ -1,0 +1,13 @@
+[project]
+name = 'ai-sdk-python-mirror'
+version = '0.1.0'
+description = 'Python type mirror for selected Vercel AI SDK modules'
+requires-python = '>=3.11'
+dependencies = []
+
+[build-system]
+requires = ['hatchling']
+build-backend = 'hatchling.build'
+
+[tool.uv]
+package = false
