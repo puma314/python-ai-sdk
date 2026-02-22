@@ -10,18 +10,16 @@ from packages.provider.src.shared.v3.shared_v3_warning import SharedV3Warning
 
 from .open_responses_api import (
   FunctionCallItemParam,
-  FunctionCallOutputItemParam,
   InputFileContentParam,
   InputImageContentParam,
   InputTextContentParam,
-  OpenResponsesRequestBody,
   OutputTextContentParam,
   RefusalContentParam,
 )
 
 
 class OpenResponsesInputConversion(TypedDict):
-  input: OpenResponsesRequestBody['input']
+  input: list[dict[str, Any]]
   instructions: str | None
   warnings: list[SharedV3Warning]
 
@@ -110,7 +108,7 @@ async def convertToOpenResponsesInput(*, prompt: list[dict[str, Any]]) -> OpenRe
         output = part['output']
         output_type = output['type']
         if output_type in ('text', 'error-text'):
-          content_value: FunctionCallOutputItemParam['output'] = output['value']
+          content_value: Any = output['value']
         elif output_type == 'execution-denied':
           content_value = output.get('reason') or 'Tool execution denied.'
         elif output_type in ('json', 'error-json'):

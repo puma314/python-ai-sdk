@@ -1,15 +1,13 @@
 """Map Open Responses finish reason strings to v3 unified reasons."""
 
-from packages.provider.src.language_model.v3.language_model_v3_finish_reason import (
-  LanguageModelV3FinishReason,
-)
+from typing import Literal
 
 
 def mapOpenResponsesFinishReason(
   *,
   finishReason: str | None,
   hasToolCalls: bool,
-) -> LanguageModelV3FinishReason['unified']:
+) -> Literal['stop', 'length', 'content-filter', 'tool-calls', 'other']:
   """Translate provider finish-reason codes into AI SDK unified reasons."""
 
   if finishReason in (None,):
